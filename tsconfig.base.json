@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@macieklad/ui*": ["libs/ui/src*", "libs/ui/src"],
+    }
+  },
+  "exclude": ["node_modules"]
+}

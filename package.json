@@ -1,0 +1,19 @@
+{
+  "name": "@macieklad/universe",
+  "version": "0.0.1",
+  "description": "",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./**/node_modules"
+  },
+  "workspaces": [
+    "libs/*",
+    "apps/*"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
