@@ -1,5 +1,19 @@
-// https://storybook.js.org/docs/react/writing-stories/parameters#global-parameters
+import { rootClass } from '../src/definitions';
+
 export const parameters = {
-  // https://storybook.js.org/docs/react/essentials/actions#automatically-matching-args
-  actions: { argTypesRegex: '^on.*' },
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
 };
+
+export const decorators = [
+  (Story) => (
+    <div className={rootClass}>
+      <Story />
+    </div>
+  ),
+];
